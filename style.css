@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(0,57,106);
+    background: linear-gradient(0deg, rgba(0,57,106,0.8883928571428571) 0%, rgba(159,135,8,1) 100%);
+    padding: 20px;
+}
+.input-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
+}
+#input{
+    padding: 10px;
+    font-size: 1rem;
+    flex-grow: 1;
+    min-width: 0;
+}
+#btn{
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+#Tshirt-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+.product-button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 150px;
+    text-align: center;
+}
+.shirt-button.in-stock{
+    background-color:#4CAF50 ;
+    color: white;
+}
+.shirt-button.out-of-stock{
+    background-color: aliceblue;
+    color: #555;
+    cursor: not-allowed;
+}
